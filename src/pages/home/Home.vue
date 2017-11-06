@@ -1,37 +1,40 @@
 <template>
 	<div>
-		<home-header/>
-		<home-sliper/>
-		<home-swiper/>
-		<home-4part/>
-		<home-scenelist/>
-		<home-weekend/>
-		
+		<index-header/>
+		<index-swiper/>
+		<index-icon-swiper/>
+		<index-activity/>
+		<index-hotsale :Hotsale = "this.$store.state.Hotsale" />
+		<index-weekend/>		
 	</div>
 </template>
 
 <script>
-import HeaderComponent from './Header';
-import SliperComponent from './Sliper';
-import PositionComponent from './4part';
-import WeekendComponent from './WeekendGo';
-import SceneListComponent from './SceneList';
-import SwiperComponent from './swiper';
-
+import Header from './components/Header';
+import Swiper from './components/Swiper';
+import IconSwiper from './components/IconSwiper';
+import WeekendList from './components/WeekendList';
+import Recommend from './components/Hotsale';
+import Activity from './components/Activity';
+import axios from 'axios';
 
 export default{
+	
 	components:{
-		"home-header":HeaderComponent,
-		"home-sliper":SliperComponent,
-		"home-weekend":WeekendComponent,
-		"home-scenelist":SceneListComponent,
-		"home-swiper":SwiperComponent,
-		"home-4part":PositionComponent
+		"index-header":Header,
+		"index-swiper":Swiper,
+		"index-icon-swiper":IconSwiper,
+		"index-activity":Activity,
+		"index-hotsale":Recommend,
+		"index-weekend":WeekendList
+	},
+	mounted(){
+		this.$store.dispatch("getHotsale");
 	}
 }
 
-
 </script>
-
+	
 <style>
+
 </style>
