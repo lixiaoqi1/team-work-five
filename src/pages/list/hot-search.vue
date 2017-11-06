@@ -47,7 +47,7 @@
 			<div class="hotsearch-city hotsearch-spot">
 				<div class="hotsearch-typeicon">
 					<div class="hotsearch-container">
-						<img src="http://img1.qunarzz.com/piao/fusion/1511/e8/d46972e07444bbf7.png"/>
+						<img src="http://img1.qunarzz.com/piao/fusion/1511/e8/d46972e07444bbf7.png" class="hotsearch-container-img"/>
 					</div>
 				</div>
 				<div class="hotsearch-items middleline">
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 		<div class="hotsearch-footer">
-			<a href="javascript:;">搜索身边的景点</a>
+			<a href="javascript:;" class="hotsearch-footer-btn">搜索身边的景点</a>
 		</div>
 		
 	</div>
@@ -148,7 +148,7 @@
 		top: 15%;
 		border-right: .02rem solid #DCE5E7;
 	}
-	.hotsearch-typeicon img{
+	.hotsearch-container-img{
 		width: .3rem;
 		height: .3rem;
 		position: relative;
@@ -217,7 +217,7 @@
 		text-align: center;
 		background:#fff;
 	}
-	.hotsearch-footer a{
+	.hotsearch-footer-btn{
 		color: #333;
 	}
 </style>

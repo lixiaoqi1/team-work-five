@@ -1,59 +1,35 @@
 <template>
 	<div>
-		<index-header/>
-		<index-swiper/>
-		<index-icon-swiper/>
-		<index-activity/>
-		<index-hotsale/>
-		<index-weekend :weekendInfo="weekendInfo"/>
+		<index-header />
+		<index-swiper />
+		<index-icon-swiper />
+		<index-activity />
+		<index-hotsale />
+		<index-weekend :weekendInfo="this.$store.state.weekendInfo" />
 		
 	</div>
 </template>
 
 <script>
-import HeaderComponent from './Header';
-import SliperComponent from './Sliper';
-import IconSwiperComponent from './swiper';
-import AactivityComponent from './4part';
-import HotsaleComponent from './SceneList';
-import WeekendComponent from './WeekendGo';
-import axios from 'axios';
+import HeaderComponent from './components/Header';
+import SwiperComponent from './components/Swiper';
+import IconSwiperComponent from './components/IconSwiper';
+import ActivityComponent from './components/Activity';
+import HotsaleComponent from './components/Hotsale';
+import WeekendComponent from './components/Weekend';
 
 
 
 export default{
-	data() {
-		return {
-			weekendInfo:[]
-		}
-	},
-	methods:{
-		getIndexData (){
-			axios.get('./static/index.json')
-			.then(this.handleSuccGetData.bind(this))
-			.catch(this.handleErroGetData.bind(this));	
-		},
-		handleSuccGetData:function(response){
-			if(response.status===200){
-				const {data} = response.data;
-				this.weekendInfo = data.weekendInfo;
-			}
-		},
-		handleErroGetData:function(err){
-			
-		}
 
-
-
-	},
 	mounted() {
-		this.getIndexData();	
+		this.$store.dispatch("getWeekendInfo");	 //调用action
 	},
 	components:{
 		"index-header":HeaderComponent,
-		"index-swiper":SliperComponent,
+		"index-swiper":SwiperComponent,
 		"index-icon-swiper":IconSwiperComponent,
-		"index-activity":AactivityComponent,
+		"index-activity":ActivityComponent,
 		"index-hotsale":HotsaleComponent,
 		"index-weekend":WeekendComponent
 	}
