@@ -4,6 +4,11 @@ import Home from '@/pages/home/Home'
 import List from '@/pages/list/Main'
 import SpotTicket from '@/pages/spotDetails/spot-home'
 
+import Register from '@/pages/register/index'
+
+import Tour from '@/pages/tour/Main'
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -22,6 +27,19 @@ export default new Router({
       path: '/spotTicket',
       name: 'spotTicket',
       component: SpotTicket
+    },
+
+      {
+      path: '/register',
+      name: 'register',
+      component: Register
+      },
+
+    {
+    	path: '/tour',
+    	name: 'Tour',
+    	component: Tour
+
     }
   ]
 })

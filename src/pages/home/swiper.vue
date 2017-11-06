@@ -34,14 +34,14 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<router-link to="/tour">
 					<div class="img-box">
 						<img src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png"/>
 					</div>
 					<div class="keywords">
 						一日游
 					</div>
-				</a>
+				</router-link>
 			</li>
 			<li>
 				<a href="#">
