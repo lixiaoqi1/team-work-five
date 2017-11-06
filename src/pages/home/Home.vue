@@ -5,31 +5,33 @@
 		<index-icon-swiper/>
 		<index-activity/>
 		<index-hotsale :Hotsale = "this.$store.state.Hotsale" />
-		<index-weekend/>		
+		<index-weekend :weekendInfo="this.$store.state.weekendInfo"/>		
+
 	</div>
 </template>
 
 <script>
-import Header from './components/Header';
-import Swiper from './components/Swiper';
-import IconSwiper from './components/IconSwiper';
-import WeekendList from './components/WeekendList';
-import Recommend from './components/Hotsale';
-import Activity from './components/Activity';
-import axios from 'axios';
+import HeaderComponent from './components/Header';
+import SwiperComponent from './components/Swiper';
+import IconSwiperComponent from './components/IconSwiper';
+import ActivityComponent from './components/Activity';
+import HotsaleComponent from './components/Hotsale';
+import WeekendComponent from './components/Weekend';
+
+
 
 export default{
-	
-	components:{
-		"index-header":Header,
-		"index-swiper":Swiper,
-		"index-icon-swiper":IconSwiper,
-		"index-activity":Activity,
-		"index-hotsale":Recommend,
-		"index-weekend":WeekendList
+
+	mounted() {
+		this.$store.dispatch("getHotsale");  //调用action
 	},
-	mounted(){
-		this.$store.dispatch("getHotsale");
+	components:{
+		"index-header":HeaderComponent,
+		"index-swiper":SwiperComponent,
+		"index-icon-swiper":IconSwiperComponent,
+		"index-activity":ActivityComponent,
+		"index-hotsale":HotsaleComponent,
+		"index-weekend":WeekendComponent
 	}
 }
 

@@ -18,10 +18,11 @@
 						</a>
 					</li>
 				</router-link>
+
 			</ul>
 		</div>
 		<div class="all-produces">
-			<a href="javascript:void(0)">查看所有产品</a>
+			<a href="javascript:void(0)" class ="all-pro-btn">查看所有产品</a>
 		</div>	
 	</div>
 </template>
@@ -29,7 +30,6 @@
 	export default{
 		props:["Hotsale"]
 	}
-	
 </script>
 <style scoped>
 	a{
@@ -44,7 +44,7 @@
 		line-height: .8rem;
 		padding-left: .26rem;
 		color: #212121;
-		background: #ccc;
+		background: #f5f5f5;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -82,7 +82,6 @@
 		white-space: nowrap;
 		text-overflow: ellipsis;
 		color: #212121;
-
 	}
 	.scene-con-con{
 		overflow: hidden;
@@ -116,8 +115,9 @@
 		line-height: .88rem;
 		text-align: center;
 	}
-	.all-produces a{
+	.all-pro-btn{
 		display: block;
+		background:#fff;
 	}
 </style>
 

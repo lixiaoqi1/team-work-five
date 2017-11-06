@@ -34,14 +34,14 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<router-link to="/tour">
 					<div class="img-box">
 						<img src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png"/>
 					</div>
 					<div class="keywords">
 						一日游
 					</div>
-				</a>
+				</router-link>
 			</li>
 			<li>
 				<a href="#">
@@ -191,7 +191,7 @@
           pagination: '.swiper-pagination',
           observeParents: true,
           onTransitionStart (swiper) {
-            console.log(swiper)
+            //console.log(swiper)
           }
         }
       }
@@ -206,7 +206,7 @@
     	swiperSlide
     },
     mounted() {
-      console.log('this is current swiper instance object', this.swiper)
+      //console.log('this is current swiper instance object', this.swiper)
 
     }
   }
@@ -226,6 +226,7 @@
 		height: 1.3rem;
 		padding-top: .3rem;
 		float: left;
+		background:#fff;
 	}
 	
 	img {

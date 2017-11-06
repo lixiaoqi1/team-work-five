@@ -35,13 +35,16 @@
 			</li>
 			<li>
 				<a href="#">
-					<div class="img-box">
-						<img src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png"/>
-					</div>
-					<div class="keywords">
-						一日游
-					</div>
+					<router-link to="/tour">
+						<div class="img-box">
+							<img src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png"/>
+						</div>
+						<div class="keywords">
+							一日游
+						</div>
+					</router-link>
 				</a>
+				
 			</li>
 			<li>
 				<a href="#">
@@ -226,6 +229,7 @@
 		height: 1.3rem;
 		padding-top: .3rem;
 		float: left;
+		background:#fff;
 	}
 	
 	img {
