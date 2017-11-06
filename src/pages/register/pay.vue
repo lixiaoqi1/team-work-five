@@ -131,7 +131,7 @@
 	               color:#ccc;}
 	               
 	.mingpian{font-size:.32rem;
-	          line-height:0.3rem;
+	          line-height:1rem;
 	          color:#00BCD4;}
 	          
      .payList-phoneNum {
