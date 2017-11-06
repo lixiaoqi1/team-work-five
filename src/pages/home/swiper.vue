@@ -191,7 +191,7 @@
           pagination: '.swiper-pagination',
           observeParents: true,
           onTransitionStart (swiper) {
-            console.log(swiper)
+            //console.log(swiper)
           }
         }
       }
@@ -206,7 +206,7 @@
     	swiperSlide
     },
     mounted() {
-      console.log('this is current swiper instance object', this.swiper)
+      //console.log('this is current swiper instance object', this.swiper)
 
     }
   }
@@ -226,6 +226,7 @@
 		height: 1.3rem;
 		padding-top: .3rem;
 		float: left;
+		background:#fff;
 	}
 	
 	img {

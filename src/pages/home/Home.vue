@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<home-header/>
-		<home-sliper/>
-		<home-swiper/>
-		<home-4part/>
-		<home-scenelist/>
-		<home-weekend/>
+		<index-header/>
+		<index-swiper/>
+		<index-icon-swiper/>
+		<index-activity/>
+		<index-hotsale/>
+		<index-weekend :weekendInfo="weekendInfo"/>
 		
 	</div>
 </template>
@@ -13,20 +13,49 @@
 <script>
 import HeaderComponent from './Header';
 import SliperComponent from './Sliper';
-import PositionComponent from './4part';
+import IconSwiperComponent from './swiper';
+import AactivityComponent from './4part';
+import HotsaleComponent from './SceneList';
 import WeekendComponent from './WeekendGo';
-import SceneListComponent from './SceneList';
-import SwiperComponent from './swiper';
+import axios from 'axios';
+
 
 
 export default{
+	data() {
+		return {
+			weekendInfo:[]
+		}
+	},
+	methods:{
+		getIndexData (){
+			axios.get('./static/index.json')
+			.then(this.handleSuccGetData.bind(this))
+			.catch(this.handleErroGetData.bind(this));	
+		},
+		handleSuccGetData:function(response){
+			if(response.status===200){
+				const {data} = response.data;
+				this.weekendInfo = data.weekendInfo;
+			}
+		},
+		handleErroGetData:function(err){
+			
+		}
+
+
+
+	},
+	mounted() {
+		this.getIndexData();	
+	},
 	components:{
-		"home-header":HeaderComponent,
-		"home-sliper":SliperComponent,
-		"home-weekend":WeekendComponent,
-		"home-scenelist":SceneListComponent,
-		"home-swiper":SwiperComponent,
-		"home-4part":PositionComponent
+		"index-header":HeaderComponent,
+		"index-swiper":SliperComponent,
+		"index-icon-swiper":IconSwiperComponent,
+		"index-activity":AactivityComponent,
+		"index-hotsale":HotsaleComponent,
+		"index-weekend":WeekendComponent
 	}
 }
 
