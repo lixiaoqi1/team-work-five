@@ -2,13 +2,37 @@
   <swiper :options="swiperOption" :not-next-tick="notNextTick" ref="mySwiper">
     <!-- slides -->
     <swiper-slide>
-    	<ul>
-			
+    	<ul class="page">
+			<li class="item-box" v-for="item in iconSwiperinfor.swiper1">
+				<router-link :to="item.link">
+					<div class="img-box">
+						<img class="icon" :src="item.imgUrl"/>
+					</div>
+					<div class="keywords">
+						<p class="keyword">
+							{{item.word}}
+						</p>
+					</div>
+				</router-link>
+			</li>
+			<div class="clear"></div>
 		</ul>
     </swiper-slide>
     <swiper-slide>
-    	<ul>	
-			
+    	<ul  class="page">	
+			<li class="item-box" v-for="item in iconSwiperinfor.swiper2">
+				<a href="#">
+					<div class="img-box">
+						<img class="icon" :src="item.imgUrl"/>
+					</div>
+					<div class="keywords">
+						<p class="keyword">
+							{{item.word}}
+						</p>
+					</div>
+				</a>
+			</li>
+			<div class="clear"></div>
 		</ul>
     </swiper-slide>
 
@@ -19,6 +43,7 @@
 </template>
 <script>
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
+	import {mapState} from "vuex";  //对数据做映射
   // swiper options example:
   export default {
     data() {
@@ -33,6 +58,11 @@
         }
       }
     },
+    computed: mapState({
+    	iconSwiperinfor() {
+	        return this.$store.state.home.IconswiperInfo;
+	      }
+    }),
     components:{
     	swiper,
     	swiperSlide
@@ -47,18 +77,17 @@
 	#pointer{
 	bottom:-.3rem;
 	}
-	ul{
+	.page{
 		width: 100%;
 		height: 3.2rem;
 		background: white;
 	}
 	
-	ul li{
+	.item-box{
 		width: 25%;
 		height: 1.3rem;
 		padding-top: .3rem;
 		float: left;
-		background:#fff;
 	}
 	
 	.img-box	.icon {
@@ -72,6 +101,8 @@
 		height: .66rem;
 		text-align: center;
 		margin: 0 auto;
+		background: url(../../../../static/timg.gif);
+		background-size: .66rem .66rem;
 	}
 	
 	.keywords{

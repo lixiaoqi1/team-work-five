@@ -2,7 +2,7 @@
 	<div>
 		<index-header/>
 		<index-swiper :swiperInfo = "this.$store.state.home.swiperInfo"/>
-		<index-icon-swiper />
+		<index-icon-swiper :iconSwiperinfor = "this.$store.state.home.IconswiperInfo"/>
 		<index-activity/>
 		<index-hotsale :Hotsale = "this.$store.state.home.Hotsale" />
 		<index-weekend :weekendInfo="this.$store.state.home.weekendInfo"/>		

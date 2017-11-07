@@ -42,7 +42,7 @@
 			"con":"保存完整的一座皇家行宫御苑",
 			"price":"22",
 			"link":"/spotTicket"
-		},{
+					},{
 			"id":4,
 			"img":"http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
 			"title":"北京欢乐谷",
@@ -87,7 +87,61 @@
 			"title":"秋高气爽去礼佛",
 			"content":"秋风伴着美妙经声，品尝秋的另一番滋味",
 			"link":"/aa"
-		}]
+		}],
+		"swiper":{
+			"swiper1":[
+				{"id":"0",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+				"word":"景点门票","link":""},{
+				"id":"1",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+				"word":"动植物园","link":""},{
+				"id":"2",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png",
+				"word":"故宫","link":""},{
+				"id":"3",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+				"word":"一日游",
+				"link":"/tour"},{
+				"id":"4",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+				"word":"必游榜单","link":""},{
+				"id":"5",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/6d/ee9eb965690ce402.png",
+				"word":"秋色美","link":""},{
+				"id":"6",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
+				"word":"游乐场","link":""},{
+				"id":"7",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
+				"word":"泡温泉","link":""}],
+			"swiper2":[{
+				"id":"0",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
+				"word":"城市观光","link":""},{
+				"id":"1",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
+				"word":"玻璃栈道","link":""},{
+				"id":"2",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/45/676b67d7078abc02.png",
+				"word":"名胜古迹","link":""},{
+				"id":"3",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
+				"word":"周边游","link":""},{
+				"id":"4",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
+				"word":"自然风光","link":""},{
+				"id":"5",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/6d/ee9eb965690ce402.png",
+				"word":"古水北镇","link":""},{
+				"id":"6",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
+				"word":"景点讲解","link":""},{
+				"id":"7",
+				"imgUrl":"http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
+				"word":"全部","link":""}
+			]
+		}
 	}
 
 }
