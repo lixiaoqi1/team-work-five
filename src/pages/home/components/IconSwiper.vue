@@ -2,8 +2,8 @@
   <swiper :options="swiperOption" :not-next-tick="notNextTick" ref="mySwiper">
     <!-- slides -->
     <swiper-slide>
-    	<ul>
-			<li v-for="item in iconSwiperinfor.swiper1">
+    	<ul class="page">
+			<li class="item-box" v-for="item in iconSwiperinfor.swiper1">
 				<router-link :to="item.link">
 					<div class="img-box">
 						<img class="icon" :src="item.imgUrl"/>
@@ -19,8 +19,8 @@
 		</ul>
     </swiper-slide>
     <swiper-slide>
-    	<ul>	
-			<li v-for="item in iconSwiperinfor.swiper2">
+    	<ul  class="page">	
+			<li class="item-box" v-for="item in iconSwiperinfor.swiper2">
 				<a href="#">
 					<div class="img-box">
 						<img class="icon" :src="item.imgUrl"/>
@@ -72,18 +72,17 @@
 	#pointer{
 	bottom:-.3rem;
 	}
-	ul{
+	.page{
 		width: 100%;
 		height: 3.2rem;
 		background: white;
 	}
 	
-	ul li{
+	.item-box{
 		width: 25%;
 		height: 1.3rem;
 		padding-top: .3rem;
 		float: left;
-		background:#fff;
 	}
 	
 	.img-box	.icon {
@@ -97,6 +96,8 @@
 		height: .66rem;
 		text-align: center;
 		margin: 0 auto;
+		background: url(../../../../static/timg.gif);
+		background-size: .66rem .66rem;
 	}
 	
 	.keywords{
