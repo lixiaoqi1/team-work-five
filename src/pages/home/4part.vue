@@ -1,19 +1,21 @@
 <template>
 	<div>
-		<ol>
-			<li class="li">
-				<span class="iconfont">&#xe6ec;</span>
-				定位失败
+		<ol class="pos-well-box">
+			<li class="position-well">
+				<p class="descrip">
+					<span class="iconfont">&#xe6ec;</span>
+					定位失败
+				</p>
 			</li>
-			<li class="li" >
-				<a title="5折泡温泉" class="wenquan">
+			<li class="position-well">
+				<p class="descrip">
 					<span class="iconfont" >&#xe654;</span>
 					5折泡温泉
-				</a>
+				</p>
 			</li>
 			<div class="clear"></div>
 		</ol>
-		<ul>
+		<ul class="activity">
 			<li></li>
 			<li></li>
 			<div class="clear"></div>
@@ -27,36 +29,41 @@
 }
 </script>
 <style scoped>
-	
 	.clear{
 		clear: both;
 	}
 </style>
 <style scoped>
-
-	ol{
+	.pos-well-box{
 		background: white;
 	}
 	
-	ol li{
-		overflow: hidden;
-		height: .98rem;
-		font-size: .28rem;
-		color: #212121;
-		line-height: .98rem;
-		text-align: center;
-		float: left;
+	.position-well{
 		width: 50%;
+		height: .98rem;
+		overflow: hidden;
+		font-size: .28rem;
+		text-align: center;
+		color: #212121;
+		float: left;
+		
 	}
-	.wenquan{
+	.descrip{
+		width: 1.92rem;
+		height: .30rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		margin: 0 auto;
+		margin-top: .35rem;
 		color: black;
 	}
 	
-	ul{
+	.activity{
 		margin-top: .2rem;
 		background: white;
 	}
-	ul li{
+	.activity li{
 		position: relative;
 		width: 50%;
 		padding-bottom:21.9%;
@@ -66,11 +73,11 @@
 		float: left;
 	}
 	
-	ul li:nth-child(1){
+	.activity li:nth-child(1){
 		background: url(http://img1.qunarzz.com/piao/fusion/1710/a2/e395615b16fb1302.png) ;
 		background-size:100% 100%;
 	}
-	ul li:nth-child(2){
+	.activity li:nth-child(2){
 		background: url(http://img1.qunarzz.com/piao/fusion/1710/54/1685d2108b652302.png) ;
 		background-size: cover;
 		background-size:100% 100%;

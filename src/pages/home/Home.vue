@@ -2,7 +2,7 @@
 	<div>
 		<home-header/>
 		<home-sliper/>
-		<home-swiper/>
+		<home-swiper :swiperinfor="this.$store.state.swiperInfo" />
 		<home-4part/>
 		<home-scenelist/>
 		<home-weekend/>
@@ -20,6 +20,7 @@ import SwiperComponent from './swiper';
 
 
 export default{
+	props: ["swiperinfor"],
 	components:{
 		"home-header":HeaderComponent,
 		"home-sliper":SliperComponent,
@@ -27,7 +28,11 @@ export default{
 		"home-scenelist":SceneListComponent,
 		"home-swiper":SwiperComponent,
 		"home-4part":PositionComponent
-	}
+	},
+    mounted() {
+     	this.$store.dispatch("getswiperinfor");
+     	console.log(this.$store.state.swiperInfo);
+    }
 }
 
 
