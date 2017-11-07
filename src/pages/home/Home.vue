@@ -2,7 +2,7 @@
 	<div>
 		<index-header/>
 		<index-swiper/>
-		<index-icon-swiper :swiperinfor = "this.$store.state.swiperInfo"/>
+		<index-icon-swiper :swiperinfor = "this.$store.state.IconswiperInfo"/>
 		<index-activity/>
 		<index-hotsale :Hotsale = "this.$store.state.Hotsale" />
 		<index-weekend :weekendInfo="this.$store.state.weekendInfo"/>		
@@ -24,7 +24,6 @@ export default{
 
 	mounted() {
 		this.$store.dispatch("getHotsale");  //调用action
-		this.$store.dispatch("getswiperinfor");
 	},
 	components:{
 		"index-header":HeaderComponent,

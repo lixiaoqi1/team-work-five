@@ -8,7 +8,7 @@ export default new Vuex.Store({
 	state:{
 		Hotsale:[],
 		weekendInfo:[],
-		swiperInfo:[]
+		IconswiperInfo:[]
 	},
 	actions:{
 		getHotsale(context){
@@ -18,19 +18,9 @@ export default new Vuex.Store({
 					const {data} = response.data;
 					context.commit("changeHotsale",data.Hotsale);
 					context.commit("changeWeekendInfo",data.weekendInfo); //调用mutations
-					//commit是用来调用mutations方法	
+					context.commit("changeiconSwiperInfo", data.swiper);
 				}
 			})
-		},
-		getswiperinfor(context){
-			axios.get("/static/IconSwiperdb.json")
-				.then((res) => {
-					//console.log(res.data.data);
-					if (res.status === 200) {
-						const data  = res.data.data;
-						context.commit("changeSwiperInfo", data)
-					}
-				})
 		}
 	},
 	mutations:{
@@ -40,9 +30,8 @@ export default new Vuex.Store({
 		changeWeekendInfo(state,data){
 			state.weekendInfo=data;
 		},
-		changeSwiperInfo(state, data) {
-			console.log(data)
-			state.swiperInfo = data;
+		changeiconSwiperInfo(state, data) {
+			state.IconswiperInfo = data;
 		}
 	},
 	getters:{}
