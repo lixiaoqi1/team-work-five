@@ -18,9 +18,16 @@
 </template>
 
 <script>
-export default {
-	props:["weekendInfo"]
-}
+	import {mapState} from "vuex";  //对数据做映射
+	
+	export default {
+
+	    computed: mapState({
+	    	weekendInfo() {
+		        return this.$store.state.home.weekendInfo;
+		      }
+	    })
+	}
 </script>
 
 <style scoped>
