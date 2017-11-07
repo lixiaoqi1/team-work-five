@@ -55,12 +55,25 @@
           autoHeight: true,
           pagination: '.swiper-pagination',
           observeParents: true,
+<<<<<<< HEAD
+=======
+          onTransitionStart (swiper) {
+            //console.log(swiper)
+          }
+>>>>>>> a647d8af22e801a0369ecfa0d3eb75083dd33b7c
         }
       }
     },
     components:{
     	swiper,
     	swiperSlide
+<<<<<<< HEAD
+=======
+    },
+    mounted() {
+      //console.log('this is current swiper instance object', this.swiper)
+
+>>>>>>> a647d8af22e801a0369ecfa0d3eb75083dd33b7c
     }
   }
 </script>
@@ -83,6 +96,7 @@
 		height: 1.3rem;
 		padding-top: .3rem;
 		float: left;
+		background:#fff;
 	}
 	
 	.img-box	.icon {
