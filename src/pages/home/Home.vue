@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<home-header/>
-		<home-sliper/>
-		<home-swiper/>
+		<home-sliper :swiperInfo="this.$store.state.swiperInfo"/>
+		<home-swiper />
 		<home-4part/>
 		<home-scenelist/>
 		<home-weekend/>
@@ -30,6 +30,10 @@ export default{
 	}
 }
 
+methods: {
+	
+	
+}
 
 </script>
 
