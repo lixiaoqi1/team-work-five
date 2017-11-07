@@ -1,42 +1,43 @@
 <template>
 	<div>
-		<home-header/>
-		<home-sliper/>
-		<home-swiper :swiperinfor="this.$store.state.swiperInfo" />
-		<home-4part/>
-		<home-scenelist/>
-		<home-weekend/>
-		
+		<index-header/>
+		<index-swiper/>
+		<index-icon-swiper :swiperinfor = "this.$store.state.swiperInfo"/>
+		<index-activity/>
+		<index-hotsale :Hotsale = "this.$store.state.Hotsale" />
+		<index-weekend :weekendInfo="this.$store.state.weekendInfo"/>		
+
 	</div>
 </template>
 
 <script>
-import HeaderComponent from './Header';
-import SliperComponent from './Sliper';
-import PositionComponent from './4part';
-import WeekendComponent from './WeekendGo';
-import SceneListComponent from './SceneList';
-import SwiperComponent from './swiper';
+import HeaderComponent from './components/Header';
+import SwiperComponent from './components/Swiper';
+import IconSwiperComponent from './components/IconSwiper';
+import ActivityComponent from './components/Activity';
+import HotsaleComponent from './components/Hotsale';
+import WeekendComponent from './components/Weekend';
+
 
 
 export default{
-	props: ["swiperinfor"],
-	components:{
-		"home-header":HeaderComponent,
-		"home-sliper":SliperComponent,
-		"home-weekend":WeekendComponent,
-		"home-scenelist":SceneListComponent,
-		"home-swiper":SwiperComponent,
-		"home-4part":PositionComponent
+
+	mounted() {
+		this.$store.dispatch("getHotsale");  //调用action
+		this.$store.dispatch("getswiperinfor");
 	},
-    mounted() {
-     	this.$store.dispatch("getswiperinfor");
-     	console.log(this.$store.state.swiperInfo);
-    }
+	components:{
+		"index-header":HeaderComponent,
+		"index-swiper":SwiperComponent,
+		"index-icon-swiper":IconSwiperComponent,
+		"index-activity":ActivityComponent,
+		"index-hotsale":HotsaleComponent,
+		"index-weekend":WeekendComponent
+	}
 }
 
-
 </script>
-
+	
 <style>
+
 </style>
