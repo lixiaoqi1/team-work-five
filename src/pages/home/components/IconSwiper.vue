@@ -3,7 +3,7 @@
     <!-- slides -->
     <swiper-slide>
     	<ul>
-			<li v-for="item in swiperinfor.swiper1">
+			<li v-for="item in iconSwiperinfor.swiper1">
 				<router-link :to="item.link">
 					<div class="img-box">
 						<img class="icon" :src="item.imgUrl"/>
@@ -20,7 +20,7 @@
     </swiper-slide>
     <swiper-slide>
     	<ul>	
-			<li v-for="item in swiperinfor.swiper2">
+			<li v-for="item in iconSwiperinfor.swiper2">
 				<a href="#">
 					<div class="img-box">
 						<img class="icon" :src="item.imgUrl"/>
@@ -45,7 +45,7 @@
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
   // swiper options example:
   export default {
-  	props: ["swiperinfor"],
+  	props: ["iconSwiperinfor"],
     data() {
       return {
         notNextTick: true,
