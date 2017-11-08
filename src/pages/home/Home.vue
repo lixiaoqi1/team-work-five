@@ -1,13 +1,8 @@
 <template>
 	<div>
-<<<<<<< HEAD
-		<home-header/>
-		<home-sliper/>
-		<home-swiper/>
-		<home-4part/>
-		<home-scenelist/>
-		<home-weekend/>
-=======
+
+		
+
 		<index-header/>
 		<index-swiper :swiperInfo = "this.$store.state.home.swiperInfo"/>
 		<index-icon-swiper :iconSwiperinfor = "this.$store.state.home.IconswiperInfo"/>
@@ -15,7 +10,7 @@
 		<index-hotsale :Hotsale = "this.$store.state.home.Hotsale" />
 		<index-weekend :weekendInfo="this.$store.state.home.weekendInfo"/>		
 
->>>>>>> 7ebecaa59286b65424ffd237861461885bac6b83
+
 	</div>
 </template>
 
