@@ -6,7 +6,6 @@
 		<home-4part/>
 		<home-scenelist/>
 		<home-weekend/>
-		
 	</div>
 </template>
 
