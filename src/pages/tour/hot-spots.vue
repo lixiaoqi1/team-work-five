@@ -1,217 +1,72 @@
 <template>
 	<div>
-		<div class="spots-box">
-			<ul id="spots-xiala" style="width:57.9rem">
-				<li v-for="item in db_spots" @click="handelSoptsclick"  class="true" >
+		<div style="position: relative;">
+			<div class="spots-box" >
+			<ul id="spots-xiala" style="width:38.3rem">
+				<li v-for="item in tourListdelievery" @click="handelSoptsclick"  class="true" >
 					{{item}}
 				</li>
 				<div class="clear"></div>
 			</ul>
+			</div>
+			<div class="btn-down" ref="isblock">
+				<p class="views">游玩景点(可多选)</p>
+				<div style="margin: .1rem ;" v-for="item in tourListdelievery" @click="handelSoptsclick"  class="true" >
+					{{item}}
+				</div>
+				<span class="up  iconfont icon-jiantoushang"  @click="handelUpclick"></span>
+			</div>
+			<span class="down iconfont icon-jiantouxia"  @click="handelDownclick">
+				
+			</span>
 		</div>
-		<ol>
-			<li class="">
-				<div class="pic">
-					<img class="" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" >
-					<span class="advance">
-						可订明日
-					</span>
-				</div>
-				<div class="infor">
-					<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
-					<div class="descripe">
-						<span class="">北京出发</span>
-						<span class="">无自费</span>
-						<span class="">无购物</span>
-					</div>
-					<div class=""></div>
-					<div class="price">
-						<span class="">¥<em>45</em></span>
-						<span class="mp-list-priceflag">起</span>
-					</div>
-					<div class="nums">
-						<span class="">已售7340</span>	
-					</div>
-				</div>
-			</li>
-			<li class="">
-				<div class="pic">
-					<img class="" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" >
-					<span class="advance">
-						可订明日
-					</span>
-				</div>
-				<div class="infor">
-					<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
-					<div class="descripe">
-						<span class="">北京出发</span>
-						<span class="">无自费</span>
-						<span class="">无购物</span>
-					</div>
-					<div class=""></div>
-					<div class="price">
-						<span class="">¥<em>45</em></span>
-						<span class="mp-list-priceflag">起</span>
-					</div>
-					<div class="nums">
-						<span class="">已售7340</span>	
-					</div>
-				</div>
-			</li>
-			<li class="">
-				<div class="pic">
-					<img class="" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" >
-					<span class="advance">
-						可订明日
-					</span>
-				</div>
-				<div class="infor">
-					<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
-					<div class="descripe">
-						<span class="">北京出发</span>
-						<span class="">无自费</span>
-						<span class="">无购物</span>
-					</div>
-					<div class=""></div>
-					<div class="price">
-						<span class="">¥<em>45</em></span>
-						<span class="mp-list-priceflag">起</span>
-					</div>
-					<div class="nums">
-						<span class="">已售7340</span>	
-					</div>
-				</div>
-			</li>
-			<li class="">
-				<div class="pic">
-					<img class="" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" >
-					<span class="advance">
-						可订明日
-					</span>
-				</div>
-				<div class="infor">
-					<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
-					<div class="descripe">
-						<span class="">北京出发</span>
-						<span class="">无自费</span>
-						<span class="">无购物</span>
-					</div>
-					<div class=""></div>
-					<div class="price">
-						<span class="">¥<em>45</em></span>
-						<span class="mp-list-priceflag">起</span>
-					</div>
-					<div class="nums">
-						<span class="">已售7340</span>	
-					</div>
-				</div>
-			</li>
-			<li class="">
-				<div class="pic">
-					<img class="" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" >
-					<span class="advance">
-						可订明日
-					</span>
-				</div>
-				<div class="infor">
-					<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
-					<div class="descripe">
-						<span class="">北京出发</span>
-						<span class="">无自费</span>
-						<span class="">无购物</span>
-					</div>
-					<div class=""></div>
-					<div class="price">
-						<span class="">¥<em>45</em></span>
-						<span class="mp-list-priceflag">起</span>
-					</div>
-					<div class="nums">
-						<span class="">已售7340</span>	
-					</div>
-				</div>
-			</li>
-			<li class="">
-				<div class="pic">
-					<img class="" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" >
-					<span class="advance">
-						可订明日
-					</span>
-				</div>
-				<div class="infor">
-					<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
-					<div class="descripe">
-						<span class="">北京出发</span>
-						<span class="">无自费</span>
-						<span class="">无购物</span>
-					</div>
-					<div class=""></div>
-					<div class="price">
-						<span class="">¥<em>45</em></span>
-						<span class="mp-list-priceflag">起</span>
-					</div>
-					<div class="nums">
-						<span class="">已售7340</span>	
-					</div>
-				</div>
-			</li>
-			<li class="">
-				<div class="pic">
-					<img class="" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" >
-					<span class="advance">
-						可订明日
-					</span>
-				</div>
-				<div class="infor">
-					<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
-					<div class="descripe">
-						<span class="">北京出发</span>
-						<span class="">无自费</span>
-						<span class="">无购物</span>
-					</div>
-					<div class=""></div>
-					<div class="price">
-						<span class="">¥<em>45</em></span>
-						<span class="mp-list-priceflag">起</span>
-					</div>
-					<div class="nums">
-						<span class="">已售7340</span>	
-					</div>
-				</div>
-			</li>
-			<li class="">
-				<div class="pic">
-					<img class="" src="http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg" >
-					<span class="advance">
-						可订明日
-					</span>
-				</div>
-				<div class="infor">
-					<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
-					<div class="descripe">
-						<span class="">北京出发</span>
-						<span class="">无自费</span>
-						<span class="">无购物</span>
-					</div>
-					<div class=""></div>
-					<div class="price">
-						<span class="">¥<em>45</em></span>
-						<span class="mp-list-priceflag">起</span>
-					</div>
-					<div class="nums">
-						<span class="">已售7340</span>	
-					</div>
-				</div>
-			</li>
-		</ol>
-		
+		<div id="wrapper">
+			<div id="scroller">
+				<p v-if="isload" class="isload">
+					我要变身了
+					<img class="isload-img" src="../../../static/timg.gif" />
+				</p>
+				<ol class="detal-box">
+					<li v-for="item in Tourlist.infor" class="">
+						<div class="pic">
+							<img class="" :src=item.imgUrl>
+							<span class="advance">
+								可订明日
+							</span>
+						</div>
+						<div class="infor">
+							<h4 class="">【7-12点天天发】八达岭长城+往返直通车+门票，自由可选！</h4>
+							<div class="descripe">
+								<span class="">北京出发</span>
+								<span class="">无自费</span>
+								<span class="">无购物</span>
+							</div>
+							<div class=""></div>
+							<div class="price">
+								<span class="">¥<em>{{item.price}}</em></span>
+								<span class="mp-list-priceflag">起</span>
+							</div>
+							<div class="nums">
+								<span class="">已售{{item.sellnum}}</span>	
+							</div>
+						</div>
+					</li>
+				</ol>
+			
+			</div>
+		</div>
 	</div>
 </template>
 
 <script>
+	import IScroll from '../../../utils/iscroll-probe.js'
+
 	export default {
+		props : ["Tourlist"],
 		data() {
-			return {
-				db_spots: ["八达岭长城", "鸟巢", "水立方", "故宫", "天安门广场", "定陵", "颐和园", "明十三陵", "什刹海", "天坛公园", "恭王府", "八达岭长城缆车", "北京杜莎夫人蜡像馆", "八达岭野生动物园", "前门大街", "奥林匹克公园", "中国科学技术馆", "北京动物园", "圆明园", "八达岭熊乐园", "功夫剧《什刹海》", "北京博物馆通票", "北京大学", "天安门城楼", "恭王府大戏楼", "毛主席纪念堂", "泰山皮影戏", "清华大学", "王府井商业街", "长陵"]
-			
+			return {	
+				isload : false,
+				flag : false
 			}
 		},
 		methods:{
@@ -226,12 +81,99 @@
 					e.target.style.color="#212121";
 					e.target.className="true";
 				}
+			},
+			handelDownclick : function(){
+				this.$refs.isblock.style.display="block"
+			},
+			handelUpclick : function(){
+				this.$refs.isblock.style.display="none"
 			}
+		},
+		computed:{
+			tourListdelievery(){
+				return this.$store.state.tour.Tourlist.delivery		
+			}
+		},
+		
+		mounted(){
+			this.myScroll = new IScroll('#wrapper', {probeType:2, mouseWheel: true });
+			this.myScroll.on("scroll",()=>{
+				if(!this.isload){
+					if(this.myScroll.y>85){
+						this.flag = true;
+						this.isload=!this.isload;
+					}
+				}
+			})
+			this.myScroll.on("scrollEnd",()=>{
+				if(this.flag){
+					this.$store.commit("addTourlist");
+					setTimeout(()=>{
+						this.myScroll.refresh();
+					},500);
+					this.flag=!this.flag;
+					this.isload=!this.isload;
+				}
+			})
+			setTimeout(()=>{
+				this.myScroll.refresh();
+			},500)
 		}
 	}
 </script>
 
 <style scoped>
+	.isload-img{
+		width: .3rem;
+		height: .3rem;
+	}
+	#wrapper{
+		overflow: hidden;
+		position: fixed;
+		top: 1.72rem;
+		bottom: .72rem;
+		left: 0;
+		right: 0;
+	}
+	.views{
+		border-bottom: 1px solid #eaeaea;
+		position: relative;
+		z-index: 3;
+		color: #212121;
+		font-size: .28rem;
+		line-height: .8rem;
+		text-indent: .2rem;
+	}
+	.btn-down{
+		position: absolute;
+		z-index: 4;
+		top: 0;
+		background: #e5e7e8;
+		display: none;
+	}
+	#view {
+		
+	}
+	.down,
+	.up{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: .78rem;
+		height: .8rem;
+		border-left: .01rem solid #cecece;
+		line-height: .8rem;
+		text-align: center;
+	}
+	.down{
+		background:#e5e7e8;
+		height: .84rem;
+		line-height: .84rem;
+		font-weight: 100;
+	}
+	.up{
+		z-index: 5;
+	}
 	.spots-box ul {
 		margin-right: .6rem;
 		height: .68rem;
@@ -244,7 +186,8 @@
 	::-webkit-scrollbar{
 		display: none;
 	}
-	.spots-box ul li {
+	.spots-box ul li,
+	.views~div {
 		float: left;
 		min-width: .26rem;
 		padding: 0 .22rem;
@@ -260,6 +203,7 @@
 	}
 	.spots-box{
 		overflow: auto;
+		position: relative;
 	}
 	
 	.pic{

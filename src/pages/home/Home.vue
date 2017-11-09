@@ -2,10 +2,10 @@
 	<div>
 		<index-header/>
 		<index-swiper/>
-		<index-icon-swiper :iconSwiperinfor = "this.$store.state.IconswiperInfo"/>
+		<index-icon-swiper :iconSwiperinfor = "this.$store.state.home.IconswiperInfo"/>
 		<index-activity/>
-		<index-hotsale :Hotsale = "this.$store.state.Hotsale" />
-		<index-weekend :weekendInfo="this.$store.state.weekendInfo"/>		
+		<index-hotsale :Hotsale = "this.$store.state.home.Hotsale" />
+		<index-weekend :weekendInfo="this.$store.state.home.weekendInfo"/>		
 
 	</div>
 </template>
