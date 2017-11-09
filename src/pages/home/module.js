@@ -9,22 +9,22 @@ export default  {
 	},
 	actions: {
 		getIndexInfo(context){
-			axios.get('/static/index.json')
+			axios.get('../../../static/index.json')
 			.then((response) => {
 				if(response.status === 200){
 					const {data} = response.data;
-					context.commit("changeIndexInfo",data); //调用mutations
+					context.commit("changeInfor",data); //调用mutations
 					//commit是用来调用mutations方法	
 				}
 			})
 		}
 	},
-	mutations: {
-		changeIndexInfo(state,data) {
-			state.swiperInfo = data.swiperInfo;
-			state.IconswiperInfo = data.swiper;
+	mutations:{
+		changeInfor(state,data){
 			state.Hotsale = data.Hotsale;
-			state.weekendInfo = data.weekendInfo;
+			state.weekendInfo=data.weekendInfo;
+			state.IconswiperInfo = data.swiper;
+			state.swiperInfo = data.swiperInfo;
 		}
 	},
 	getters: {  //避免数据的冗余
@@ -37,3 +37,5 @@ export default  {
 		}
 	}
 }
+	
+

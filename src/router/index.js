@@ -6,6 +6,7 @@ import SpotTicket from '@/pages/spotDetails/spot-home'
 import Register from '@/pages/register/index'
 import Tour from '@/pages/tour/Main'
 import City from '@/pages/city/city-home'
+import HotSpring from '@/pages/hotSpring/hot-Home'
 
 
 Vue.use(Router)
@@ -42,6 +43,11 @@ export default new Router({
       path: '/city',
       name: 'City',
       component: City
+    },
+    {
+      path: '/hotSpring',
+      name: 'hotSpring',
+      component: HotSpring
     }
   ]
 })

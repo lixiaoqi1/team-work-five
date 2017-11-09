@@ -3,7 +3,7 @@
  	
  		<a class="header-left iconfont icon-fanhui" @click="handleBack"></a>
  		<div class="header-title">
- 			<input type="text" placeholder="输入城市或景点" class="inputCity" ref="searchTxt" @blur="handleBlur" @focus="handleFocus" @keydown="handleBlur"/>
+ 			<input type="text" placeholder="输入城市或景点" class="inputCity" ref="searchTxt"  @focus="handleFocus" @keydown="handleBlur"/>
  		</div>
 
  		<div class="header-right">

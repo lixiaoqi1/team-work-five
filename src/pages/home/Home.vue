@@ -6,7 +6,6 @@
 		<index-activity/>
 		<index-hotsale :Hotsale = "this.$store.state.home.Hotsale" />
 		<index-weekend :weekendInfo="this.$store.state.home.weekendInfo"/>		
-
 	</div>
 </template>
 
@@ -23,6 +22,7 @@ import WeekendComponent from './components/Weekend';
 export default{
 
 	mounted() {
+		console.log(this.$store.getters.shouldGetData)
 		if(this.$store.getters.shouldGetData){
 			this.$store.dispatch("getIndexInfo");  //调用action
 		}

@@ -5,7 +5,7 @@
 		<div class="bottom_">全部分类</div>
 		<div class="lefts isnone" :nums="num" :class="{isblock: num==0}">
 			<ul class="left">
-				<li v-for="(it1,index) in left" :ids=index @click="handelLeftClick" :class="{isclick: ind==index}">{{it1}}</li>
+				<li v-for="(it1,index) in Bottomlist.confli" :ids=index @click="handelLeftClick" :class="{isclick: ind==index}">{{it1}}</li>
 			</ul>
 		</div>
 	</div>
@@ -14,7 +14,7 @@
 		<div class="bottom_">筛选</div>
 		<div class="lefts isnone" :nums="num" :class="{isblock: num==1}">
 			<ul class="mid">
-				<li v-for="(it2,index) in mid" :ids=index @click="handelLeftClick" :class="{isclick: ind==index}">{{it2}}</li>
+				<li v-for="(it2,index) in Bottomlist.mid" :ids=index @click="handelLeftClick" :class="{isclick: ind==index}">{{it2}}</li>
 			</ul>
 		</div>
 	</div>
@@ -23,7 +23,7 @@
 		<div class="bottom_">推荐排序</div>
 		<div :nums="num"  class="isnone lefts" :class="{isblock: num==2}" >
 			<ul class="rightul">
-				<li class="right" v-for="(it3,index) in right" :ids=index @click="handelRightClick" :class="{rightcolor: rightind==index}">{{it3}}</li>
+				<li class="right" v-for="(it3,index) in Bottomlist.right" :ids=index @click="handelRightClick" :class="{rightcolor: rightind==index}">{{it3}}</li>
 			</ul>
 		</div>
 	</div>
@@ -33,12 +33,10 @@
 </template>
 
 <script>
+	import { mapState } from "vuex"
 	export default{
 		data(){
 			return {
-				left : ["全部分类","一日游","文化古迹","城市观光","展馆","交通","自然风光","温泉","餐饮"],
-				mid: ["北京","天津","唐山","保定","承德"],
-				right :["推荐排序","销量最高","价格最高","价格最低","热门评论","本周最热"],
 				ind : "0",
 				num:"4",
 				rightind:"0",
@@ -48,7 +46,6 @@
 		methods:{
 			handelLeftClick : function(e){
 				this.ind=e.target.getAttribute("ids");
-			
 			},
 			handeldisplay : function(e){
 				this.num=e.currentTarget.getAttribute("ids");
@@ -65,7 +62,12 @@
 				this.num="4";
 				this.rightind="0";
 			}
-		}
+		},
+		computed:mapState({
+			Bottomlist(){
+				return this.$store.state.tour.Tourlist.bottom
+			}
+		})
 	}
 </script>
 
@@ -88,6 +90,7 @@
 		width: 100%;
 		bottom: 0;
 		text-align: center;
+		z-index: 10;
 	}
 	.bottom{
 		position: relative;
