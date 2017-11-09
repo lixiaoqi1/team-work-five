@@ -31,8 +31,8 @@
 
 	export default{
 	    computed: mapState({
-	    	Hotsale() {
-		        return this.$store.state.home.Hotsale;
+	    	Hotsale(state) {
+		        return state.home.Hotsale;
 		      }
 	    })
 	}

@@ -9,9 +9,11 @@
  		</router-link>
 
  		<div class="header-right">
- 			<div class="header-city-box">
- 				<span class="header-city">北京</span>
- 			</div>
+		 	<router-link to="/city">
+				<div class="header-city-box">
+					<span class="header-city">北京</span>
+				</div>
+			</router-link>
  		</div>	
  	</header>
 </template>
@@ -67,6 +69,7 @@ export default {
 		white-space:nowrap;
 		text-overflow:ellipsis;
 		display:inline-block;
+		color:#fff;
 	}
 	.header-city:after{
 		content:"\0020";

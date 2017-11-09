@@ -8,7 +8,7 @@
 			</h3>
 			<ul>
 				<li>
-					<div class="ticket-type-info" @click="showTickets">
+					<div class="ticket-type-info" @click="showTickets" >
 						<p class="todayTicket">
 							{{item.typeA}}
 							<i>{{item.identify}}</i>
