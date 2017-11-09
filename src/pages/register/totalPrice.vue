@@ -3,7 +3,7 @@
 		<div class="totalPrice">
 			<div class="totalLeft">
 				<span class="total-productPrice">
-					产品价格￥<span id="totalPrice">40</span>
+					产品价格￥<span id="totalPrice">{{40*allPrice}}</span>
 					<span class="up iconfont icon-jiantoushang">
 					</span>
 				</span>
@@ -14,6 +14,10 @@
 </template>
 
 <script>
+	export default{
+        props:["allPrice"]
+        
+	}
 </script>
 
 <style>

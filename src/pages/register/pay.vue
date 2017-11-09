@@ -5,9 +5,9 @@
 			<h4>最多买5张</h4>
 			
 			<div class="payM-right">
-			   <span id="payMminus" @click="minusEvents">-</span>
+			   <span class="payMminus" @click="minusEvents" :class="{isone :num!=1}" >-</span>
 			   <input type="text" id="payNum" v-model="num" />
-			   <span id="payMplus" @click="plusEvents">+</span>
+			   <span class="payMplus" @click="plusEvents" :class="{isfive :num==5}">+</span>
 			</div>
 		</div>
 		<!--列表-->
@@ -35,6 +35,7 @@
 
 <script>
 	 export default{
+	 	
 	 	data(){
 	 		return {
 	 			num:1
@@ -44,14 +45,13 @@
 	 		minusEvents:function(e){
 	 			if(this.num>1){
 	 				this.num--;
-	 				//e.target.style.background="#00bc4f";
+	 				this.$emit("changeNum",this.num);
 	 			}
-	 			//console.log(this.num);
 	 		},
-	 		plusEvents:function(){
-	 			//vaif)r num=this.$refs.input.value;
+	 		plusEvents:function(e){
 	 			if(this.num<=4){
 	 			    this.num++;
+	 			    this.$emit("changeNum",this.num);
 	 			}
 	 		}
 	 	},
@@ -59,6 +59,7 @@
 </script>
 
 <style>
+	.payM-right .isone{background:#00BCD4;}
 	.payMessage{height:0.5rem;
 	            padding:0.4rem 0.2rem;
 	            width:100%;
@@ -83,12 +84,14 @@
 	             position:absolute;
 	             right:0.6rem;}
 	
-	.payM-right #payMminus{position:absolute;
+	.payM-right .payMminus{position:absolute;
 	                     width:0.5rem;
 	                     height:0.5rem;
 	                     text-align:center;
 	                     line-height:0.5rem;
 	                     background:#f0f0f0;}
+	                     
+	.payM-right .isone{background:#00BCD4;}
 	
 	.payM-right #payNum{position:absolute;
 	                    width:1rem;
@@ -97,14 +100,15 @@
                         border:none;
                         text-align:center;}
 	
-	.payM-right #payMplus{position:absolute;
+	.payM-right .payMplus{position:absolute;
 	                      width:0.5rem;
 	                      height:0.5rem;
 	                      left:1.5rem;
 	                      text-align:center;
 	                      line-height:0.5rem;
 	                      background:#00AFC7;}
-	
+	                     
+	.payM-right .isfive{background:#f0f0f0;}
 	.payList{
 		  width:100%;
 		  background:#fff;
