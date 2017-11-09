@@ -1,12 +1,11 @@
 <template>
 	<div>
 		<index-header/>
-		<index-swiper/>
+		<index-swiper :swiperInfo = "this.$store.state.home.swiperInfo"/>
 		<index-icon-swiper :iconSwiperinfor = "this.$store.state.home.IconswiperInfo"/>
 		<index-activity/>
 		<index-hotsale :Hotsale = "this.$store.state.home.Hotsale" />
 		<index-weekend :weekendInfo="this.$store.state.home.weekendInfo"/>		
-
 	</div>
 </template>
 
@@ -23,7 +22,10 @@ import WeekendComponent from './components/Weekend';
 export default{
 
 	mounted() {
-		this.$store.dispatch("getHotsale");  //调用action
+		console.log(this.$store.getters.shouldGetData)
+		if(this.$store.getters.shouldGetData){
+			this.$store.dispatch("getIndexInfo");  //调用action
+		}
 	},
 	components:{
 		"index-header":HeaderComponent,

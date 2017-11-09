@@ -1,7 +1,7 @@
 <template>
 <div>
 	<tour-Header/>
-	<tour-Spots :Tourlist="this.$store.state.tour.Tourlist"/>
+	<tour-Spots />
 	<tour-Bottom />
 </div>
 </template>

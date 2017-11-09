@@ -43,9 +43,9 @@
 </template>
 <script>
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
+	import {mapState} from "vuex";  //对数据做映射
   // swiper options example:
   export default {
-  	props: ["iconSwiperinfor"],
     data() {
       return {
         notNextTick: true,
@@ -58,6 +58,11 @@
         }
       }
     },
+    computed: mapState({
+    	iconSwiperinfor() {
+	        return this.$store.state.home.IconswiperInfo;
+	      }
+    }),
     components:{
     	swiper,
     	swiperSlide

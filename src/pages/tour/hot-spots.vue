@@ -27,7 +27,7 @@
 					<img class="isload-img" src="../../../static/timg.gif" />
 				</p>
 				<ol class="detal-box">
-					<li v-for="item in Tourlist.infor" class="">
+					<li v-for="item in Tourlists.infor" class="">
 						<div class="pic">
 							<img class="" :src=item.imgUrl>
 							<span class="advance">
@@ -52,7 +52,10 @@
 						</div>
 					</li>
 				</ol>
-			
+				<p v-if="bottomisload" class="isload">
+					我要变身了
+					<img class="isload-img" src="../../../static/timg.gif" />
+				</p>
 			</div>
 		</div>
 	</div>
@@ -66,7 +69,8 @@
 		data() {
 			return {	
 				isload : false,
-				flag : false
+				flag : false,
+				bottomisload : false
 			}
 		},
 		methods:{
@@ -92,6 +96,9 @@
 		computed:{
 			tourListdelievery(){
 				return this.$store.state.tour.Tourlist.delivery		
+			},
+			Tourlists(){
+				return this.$store.state.tour.Tourlist	
 			}
 		},
 		
@@ -104,6 +111,7 @@
 						this.isload=!this.isload;
 					}
 				}
+				
 			})
 			this.myScroll.on("scrollEnd",()=>{
 				if(this.flag){

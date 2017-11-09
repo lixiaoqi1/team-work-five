@@ -19,7 +19,6 @@ export default ({
 			state.Tourlist=data;
 		},
 		addTourlist(state,data) {
-
 			state.Tourlist.infor.push(...(state.Tourlist.infor))
 		}
 	},

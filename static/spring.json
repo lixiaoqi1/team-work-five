@@ -1,0 +1,84 @@
+{
+	"ret": true,
+	"data": {
+		"hotSpringInfo": [{
+			"id": 1,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1411/43/dea8b51719a4a69b68777baa68c146e4.water.jpg_640x276_775c187f.jpg",
+			"word":"春晖园温泉度假村",
+			"sentence":"北京高端温泉，近年价格越来越亲民",
+			"price":"112",
+			"link": ""
+		}, {
+			"id": 2,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1608/cd/cdf33f046a958873a3.water.jpg_640x276_2fe01205.jpg",
+			"word":"小汤山温泉度假区",
+			"sentence":"景色宜人，环境舒适",
+			"price":"65",
+			"link": ""
+		}, {
+			"id": 3,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1703/27/276f941db3912ce7a3.img.jpg_640x276_9da65b89.jpg",
+			"word":"郁金香摩锐温泉水世界",
+			"sentence":"北方夏威夷，豪华游乐场",
+			"price":"49",
+			"link": ""
+		}, {
+			"id": 4,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1511/6c/6cb26acc8bba843490.water.jpg_640x276_620a47a8.jpg",
+			"word":"龙脉温泉",
+			"sentence":"中国温泉之乡给你“帝王”的享受",
+			"price":"149",
+			"link": ""
+		}, {
+			"id": 5,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1510/8e/8eea8eb6f41698290.img.jpg_640x276_dc899e2f.jpg",
+			"word":"金隅凤山温泉",
+			"sentence":"在温泉汤池中增添独享欢乐的私密空间",
+			"price":"247",
+			"link": ""
+		}, {
+			"id": 6,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1510/64/64818870f02c0a2390.img.jpg_640x276_60e0e9b4.jpg",
+			"word":"顺景温泉",
+			"sentence":"超大室内温泉，水质滑腻，洁净无污染",
+			"price":"367",
+			"link": ""
+		}, {
+			"id": 7,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1510/13/1384384fca5bc2a590.img.jpg_640x276_d4318193.jpg",
+			"word":"运河苑温泉水世界",
+			"sentence":"泡温泉？不用走远",
+			"price":"58",
+			"link": ""
+		}, {
+			"id": 8,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1503/dc/dc651cd2e01fb900.img.jpg_640x276_d86a7f11.jpg",
+			"word":"南宫温泉水世界",
+			"sentence":"温泉与水世界，沐浴与戏水的有趣结合",
+			"price":"37",
+			"link": ""
+		}, {
+			"id": 9,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1507/d5/a9c70a3b26bd90e2e9274eae72ae6727.water.jpg_640x276_af119372.jpg",
+			"word":"九华山庄温泉主题公园",
+			"sentence":"九华出品，必是精品",
+			"price":"67",
+			"link": ""
+		}, {
+			"id": 10,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1503/a3/a331cd17f6e538d1.img.jpg_640x276_49f6aa8b.jpg",
+			"word":"南宫民族养生温泉",
+			"sentence":"适合多年龄层游客，休闲放松的好去处",
+			"price":"38",
+			"link": ""
+		}, {
+			"id": 11,
+			"imgUrl": "http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_640x276_6563c478.jpg",
+			"word":"西山温泉",
+			"sentence":"完美演绎京城汤泉的独有魅力",
+			"price":"216",
+			"link": ""
+		} ]
+		
+    }
+}

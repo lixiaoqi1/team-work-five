@@ -33,6 +33,7 @@
 </template>
 
 <script>
+	import { mapState } from "vuex"
 	export default{
 		data(){
 			return {
@@ -54,7 +55,6 @@
 			},
 			handelRightClick : function(e){
 				this.rightind=e.currentTarget.getAttribute("ids");
-				console.log(this.Bottomlist)
 			},
 			handelZhezhaoClick : function(e){
 				this.a=!this.a;
@@ -63,11 +63,11 @@
 				this.rightind="0";
 			}
 		},
-		computed:{
+		computed:mapState({
 			Bottomlist(){
 				return this.$store.state.tour.Tourlist.bottom
 			}
-		}
+		})
 	}
 </script>
 

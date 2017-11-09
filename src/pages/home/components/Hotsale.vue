@@ -27,8 +27,14 @@
 	</div>
 </template>
 <script>
+	import {mapState} from "vuex";  //对数据做映射
+
 	export default{
-		props:["Hotsale"]
+	    computed: mapState({
+	    	Hotsale() {
+		        return this.$store.state.home.Hotsale;
+		      }
+	    })
 	}
 </script>
 <style scoped>
