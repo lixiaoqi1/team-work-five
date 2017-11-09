@@ -4,7 +4,7 @@
     <swiper-slide v-for="item in swiperInfo" :key="item.id">
       <router-link :to="item.link">
       	<div class="swiper-img-con">
-      		<img class="swiper-img" src="http://img1.qunarzz.com/piao/fusion/1609/15/630b82d932a3c402.jpg_640x200_862e836b.jpg" />
+      		<img class="swiper-img" :src="item.img" />
       	</div>
       </router-link>
     </swiper-slide>
@@ -33,8 +33,8 @@
    
     },
    computed: mapState({
-        swiperInfo() {
-            return this.$store.state.home.swiperInfo;
+        swiperInfo(state) {
+            return state.home.swiperInfo;
           }
       }),
     components: {

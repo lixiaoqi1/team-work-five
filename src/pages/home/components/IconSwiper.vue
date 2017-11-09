@@ -59,8 +59,8 @@
       }
     },
     computed: mapState({
-    	iconSwiperinfor() {
-	        return this.$store.state.home.IconswiperInfo;
+    	iconSwiperinfor(state) {
+	        return state.home.IconswiperInfo;
 	      }
     }),
     components:{

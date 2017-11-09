@@ -23,8 +23,8 @@
 	export default {
 
 	    computed: mapState({
-	    	weekendInfo() {
-		        return this.$store.state.home.weekendInfo;
+	    	weekendInfo(state) {
+		        return state.home.weekendInfo;
 		      }
 	    })
 	}
