@@ -2,7 +2,7 @@
 	<!--只能有一个根元素-->
 	<div>
 		<div class="header">
-			<router-link to="/" class="header-left iconfont icon-fanhui"></router-link>
+			<router-link to="/spotTicket" class="header-left iconfont icon-fanhui"></router-link>
 			<h1 class="header-center">订单填写</h1>
 			<div class="header-right">登录</div>
 		</div>

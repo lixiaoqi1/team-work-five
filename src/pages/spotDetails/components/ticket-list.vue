@@ -40,7 +40,9 @@
 							<div class="ticket-order-right flexbox-layout">
 								<a href="javascript:;" class="ticket-link">
 									<strong class="ticket-price displays">￥<em>40</em></strong>
-									<span class="ticket-btn displays">预订</span>
+									<router-link to="/register">
+										<span class="ticket-btn displays">预订</span>
+									</router-link>
 								</a>
 							</div>
 						</div>
@@ -64,7 +66,9 @@
 							<div class="ticket-order-right flexbox-layout">
 								<a href="javascript:;" class="ticket-link">
 									<strong class="ticket-price displays">￥<em>40</em></strong>
-									<span class="ticket-btn displays">预订</span>
+									<router-link to="/register">
+										<span class="ticket-btn displays">预订</span>
+									</router-link>
 								</a>
 							</div>
 						</div>
@@ -104,7 +108,9 @@
 							<div class="ticket-order-right flexbox-layout">
 								<a href="javascript:;" class="ticket-link">
 									<strong class="ticket-price displays">￥<em>40</em></strong>
-									<span class="ticket-btn displays">预订</span>
+									<router-link to="/register">
+										<span class="ticket-btn displays">预订</span>
+									</router-link>
 								</a>
 							</div>
 						</div>
@@ -128,7 +134,9 @@
 							<div class="ticket-order-right flexbox-layout">
 								<a href="javascript:;" class="ticket-link">
 									<strong class="ticket-price displays">￥<em>40</em></strong>
-									<span class="ticket-btn displays">预订</span>
+									<router-link to="/register">
+										<span class="ticket-btn displays">预订</span>
+									</router-link>
 								</a>
 							</div>
 						</div>
@@ -169,7 +177,9 @@
 							<div class="ticket-order-right flexbox-layout">
 								<a href="javascript:;" class="ticket-link">
 									<strong class="ticket-price displays">￥<em>40</em></strong>
-									<span class="ticket-btn displays">预订</span>
+									<router-link to="/register">
+										<span class="ticket-btn displays">预订</span>
+									</router-link>
 								</a>
 							</div>
 						</div>
@@ -193,7 +203,9 @@
 							<div class="ticket-order-right flexbox-layout">
 								<a href="javascript:;" class="ticket-link">
 									<strong class="ticket-price displays">￥<em>40</em></strong>
-									<span class="ticket-btn displays">预订</span>
+									<router-link to="/register">
+										<span class="ticket-btn displays">预订</span>
+									</router-link>
 								</a>
 							</div>
 						</div>
