@@ -27,13 +27,13 @@
 	            
 	            width:100%;
 	           }
-	.totalLeft{width:48%;
+	.totalLeft{width:50%;
 	           float:left;
 	           position:absolute;
 	           font-size:.28rem;
 	           line-height:1rem;
 	           left:0;
-	           padding-left:0.2rem;
+	           text-indent:0.2rem;
 	           background:#fff;
 	           border-right:0.001rem solid #ccc;}
 	              

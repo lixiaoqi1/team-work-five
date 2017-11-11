@@ -36,9 +36,9 @@
 	       background:#fff;
 	       padding:0.1rem 0.1rem;
 	       margin-bottom:0.3rem;}
-	.scene-left{width:5.2rem;height:1.4rem;float:left;}
-	.scene-left-top{font-size:.32rem;line-height:.40rem;
-	               width:5.3rem;margin-top:0.3rem;}
+	.scene-left{width:4rem;height:1.4rem;float:left;}
+	.scene-left-top{font-size:.28rem;line-height:.40rem;
+	               width:5.0rem;margin-top:0.3rem;}
 	.scene-left-bottom{height:0.3rem;width:5.3rem;margin-left:0.1rem;}
 	.scene-left-bottom img{width:0.24rem;height:0.24rem;vertical-align:center;}
 	.scene-left-bottom li{width:2rem;float:left;

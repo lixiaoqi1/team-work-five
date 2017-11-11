@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="tourBox">
 		<div style="position: relative;">
 			<div class="spots-box" >
 			<ul id="spots-xiala" style="width:38.3rem">
@@ -27,7 +27,7 @@
 					<img class="isload-img" src="../../../static/timg.gif" />
 				</p>
 				<ol class="detal-box">
-					<li v-for="item in Tourlists.infor" class="">
+					<li v-for="item in Tourlists.infor" class="tourDetal">
 						<div class="pic">
 							<img class="" :src=item.imgUrl>
 							<span class="advance">
@@ -288,6 +288,7 @@
 		font-size: .18rem;
 		color: #9e9e9e;
 	}
-
+	.tourDetal,.tourBox{
+	background: white;}
 	
 </style>
