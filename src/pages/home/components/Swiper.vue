@@ -57,6 +57,8 @@
 		width: 100%;
 		height: 0;
 		padding-bottom: 31.25%;
+    background:url(http://localhost:8080/static/images/error.jpg);
+    background-size:100% 100%;
 	}
 	.swiper-img {
 		width: 100%;

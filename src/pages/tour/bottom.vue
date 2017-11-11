@@ -55,6 +55,7 @@
 			},
 			handelRightClick : function(e){
 				this.rightind=e.currentTarget.getAttribute("ids");
+				console.log(this.Bottomlist.confli)
 			},
 			handelZhezhaoClick : function(e){
 				this.a=!this.a;

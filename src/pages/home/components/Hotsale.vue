@@ -6,7 +6,7 @@
 				<router-link :to="item.link">
 					<li class="scene-con-li">
 						<a href="javascript:void(0)">
-							<div class="scene-con-img-box"><img :src="item.img" alt="故宫"  class="scene-con-img"></div>
+							<div class="scene-con-img-box"><img :src="item.img"   class="scene-con-img"></div>
 							<div class="scene-con-infos">
 								<div class="scene-con-title">{{item.title}}</div>
 								<div  class="scene-con-con">{{item.con}}</div>
@@ -71,6 +71,8 @@
 		left: .24rem;
 		width: 1.4rem;
 		height: 1.4rem;
+		background:url(http://localhost:8080/static/images/error1.jpg);
+    	background-size:100% 100%;
 	}
 	.scene-con-img-box .scene-con-img{
 		vertical-align: top;

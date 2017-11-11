@@ -54,7 +54,7 @@
           direction: 'horizontal',
           autoHeight: true,
           pagination: '.swiper-pagination',
-          observeParents: true,
+          observeParents: true
         }
       }
     },
@@ -101,8 +101,6 @@
 		height: .66rem;
 		text-align: center;
 		margin: 0 auto;
-		background: url(../../../../static/timg.gif);
-		background-size: .66rem .66rem;
 	}
 	
 	.keywords{

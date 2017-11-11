@@ -25,6 +25,9 @@ export default  {
 			state.weekendInfo=data.weekendInfo;
 			state.IconswiperInfo = data.swiper;
 			state.swiperInfo = data.swiperInfo;
+		},
+		addWeekendList(state,data){
+			state.weekendInfo.push(...(state.weekendInfo));
 		}
 	},
 	getters: {  //避免数据的冗余

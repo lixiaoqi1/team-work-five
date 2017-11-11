@@ -105,27 +105,25 @@
 		mounted(){
 			this.myScroll = new IScroll('#wrapper', {probeType:2, mouseWheel: true });
 			this.myScroll.on("scroll",()=>{
+				
 				if(!this.isload){
 					if(this.myScroll.y>85){
 						this.flag = true;
 						this.isload=!this.isload;
 					}
 				}
-				
 			})
 			this.myScroll.on("scrollEnd",()=>{
 				if(this.flag){
 					this.$store.commit("addTourlist");
-					setTimeout(()=>{
-						this.myScroll.refresh();
-					},500);
 					this.flag=!this.flag;
 					this.isload=!this.isload;
 				}
 			})
-			setTimeout(()=>{
-				this.myScroll.refresh();
-			},500)
+		},
+
+		updated() {
+			this.myScroll.refresh();
 		}
 	}
 </script>
@@ -158,9 +156,6 @@
 		top: 0;
 		background: #e5e7e8;
 		display: none;
-	}
-	#view {
-		
 	}
 	.down,
 	.up{
