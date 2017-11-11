@@ -121,18 +121,19 @@
 		border-bottom:0.02rem solid #ccc;}
 		
 	
-	.payList-youke{font-size:.32rem;
+	.payList-youke{
+	               float:left;
+	               font-size:.32rem;
 	               width:1.6rem;
 	               line-height:1rem;
-	               float:left;
 	               text-align:center;
 	               color:#616161;}	
 	               
-	#payList-pName{font-size:.32rem;
+	#payList-pName{float:left;
+	               font-size:.32rem;
 	               line-height:1rem;
-	               width:4.5rem;
-	               float:left;
-	               color:#ccc;}
+	               width:4.4rem;
+	                color:#ccc;}
 	               
 	.mingpian{font-size:.32rem;
 	          line-height:1rem;
