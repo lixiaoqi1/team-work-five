@@ -1,11 +1,11 @@
 <template>
  	<div class="header">
  	
- 		<a class="header-left iconfont icon-fanhui"></a>
+ 		<a class="header-left iconfont icon-fanhui" @click="handleBack"></a>
 
 
  		<div class="header-title">
- 			<input type="text" placeholder="输入城市或景点"/>
+ 			<input type="text" placeholder="输入城市或景点" class="inputCity"/>
  		</div>
 
  		<div class="header-right">
@@ -17,7 +17,11 @@
 
 <script>
 export default {
-	
+	methods:{
+		handleBack(){
+			this.$router.go(-1);
+		}
+	}
 }
 </script>
 
@@ -46,23 +50,23 @@ export default {
 		line-height:.6rem;
 		height:.6rem;
 	}
-	.header-title input{
+	.header-title inputCity{
 		width:80%;
 		border:none;
 		text-indent:.2rem;
 		line-height:.4rem;
 		border-radius:.06rem;
 	}
-	.header-title input::placeholder{
+	.header-title inputCity::placeholder{
 		color:#999;
 	}
-	.header-title input::-webkit-input-placeholder{
+	.header-title inputCity::-webkit-input-placeholder{
 		color:#999;
 	}
-	.header-title input::-moz-input-placeholder{
+	.header-title inputCity::-moz-input-placeholder{
 		color:#999;
 	}
-	.header-title input::-ms-input-placeholder{
+	.header-title inputCity::-ms-input-placeholder{
 		color:#999;
 	}
 	.header-right{

@@ -1,0 +1,42 @@
+{
+	"ret" : true,
+	"data" : {
+		"infor":[{
+		"imgUrl":"http://img1.qunarzz.com/p/tts2/1707/43/8250a273d1946502.jpg_110x110_532f0563.jpg",
+		 "price" :"35",
+		 "sellnum":"638"
+		},{
+		 "imgUrl":"http://img1.qunarzz.com/p/tts3/1708/e0/9072ffc0ef322302.jpg_110x110_52fb9421.jpg",
+		 "price" :"10",
+		 "sellnum":"2997"
+		},{
+		 "imgUrl":"http://img1.qunarzz.com/p/tts1/1611/34/ce613ef51240ad02.jpg_110x110_fb7e8f08.jpg",
+		 "price" :"60",
+		 "sellnum":"173"
+		},{
+		 "imgUrl":"http://img1.qunarzz.com/p/tts2/1707/50/4af2a43569af3e02.jpg_110x110_799a9094.jpg",
+		 "price" :"36",
+		 "sellnum":"856"
+		},{
+		 "imgUrl":"http://img1.qunarzz.com/p/tts4/1703/29/3d3d29034018db02.jpg_110x110_329a2e52.jpg",
+		 "price" :"41",
+		 "sellnum":"2273"
+		},{
+		 "imgUrl":"http://img1.qunarzz.com/p/tts9/1706/d1/a154363039b41e02.jpg_110x110_a4ee3f04.jpg",
+		 "price" :"998",
+		 "sellnum":"9744"
+		},{
+		 "imgUrl":"http://img1.qunarzz.com/p/tts9/1505/3b/650532c8f42ece.jpg_110x110_8e96a9e8.jpg",
+		 "price" :"22",
+		 "sellnum":"7432"
+		}],
+		"bottom":{
+			"confli" : ["全部分类","一日游","文化古迹","城市观光","展馆","交通","自然风光","温泉","餐饮"],
+			"mid":     ["北京","天津","唐山","保定","承德"],
+			"right" :  ["推荐排序","销量最高","价格最高","价格最低","热门评论","本周最热"]
+		},
+		"delivery":["八达岭长城", "鸟巢", "水立方", "故宫", "天安门广场", "定陵", "颐和园",
+		 "明十三陵", "什刹海", "天坛公园", "恭王府", "八达岭长城缆车", "北京杜莎夫人蜡像馆","北京大学", 
+		 "天安门城楼", "恭王府大戏楼", "毛主席纪念堂", "泰山皮影戏", "清华大学", "王府井商业街", "长陵"]
+	}
+}

@@ -1,30 +1,23 @@
-import Vue from 'vue'
 import Vuex from 'vuex'
-
-import axios from 'axios';
+import Vue from 'vue'
+import home from '../pages/home/module.js'
+import list from '../pages/list/module.js'
+import city from '../pages/city/module.js'
+import hotSpring from '../pages/hotSpring/module.js'
+import axios from 'axios'
+import tour from '../pages/tour/module.js'
+import spotDetails from '../pages/spotDetails/module.js'
 
 Vue.use(Vuex);
-
+//在store中存储
 export default new Vuex.Store({
-	state: {
-		swiperInfo: []
-	},
-	actions: {
-		 getSwiperInfo(context) {
-			axios.get('/static/index.json')
-				.then((response) => {
-					if (response.status === 200) {
-						const {data}  = response.data;
-						context.commit("changeSwiperInfo", data.swiperInfo)
-					}
-				})
-		}		      
-	},
-	
-	mutations: {		
-		   changeSwiperInfo(state, data) {
-			state.swiperInfo = data
-		}
-	},
-	getters: {}
+	modules: {
+		home: home,
+		list: list,
+		city: city,
+		tour : tour,
+		home:home,
+		hotSpring : hotSpring,
+		spotDetails:spotDetails
+	}
 })
